@@ -33,17 +33,21 @@ main h1 {
     border-radius: 10px;
     background-color: #fff;
     margin: 10px 0; }
-    #kanban .column .card .close {
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      width: 22px;
-      height: 22px;
+    #kanban .column .card::after {
+      content: "X";
+      font-size: 14px;
+      font-weight: 500;
+      display: block;
+      width: 15px;
+      height: 20px;
+      line-height: 20px;
       border-radius: 50%;
-      text-align: center;
-      line-height: 22px;
       color: #fff;
-      background-color: red; }
+      background-color: red;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding-left: 5px; }
     #kanban .column .card h3 {
       font-weight: 500; }
     #kanban .column .card p {
@@ -71,7 +75,7 @@ main h1 {
       background-color: #4c9dc2; }
       #kanban .column .card:hover .tag {
         color: #1d4050; }
-      #kanban .column .card:hover .close {
+      #kanban .column .card:hover::after {
         background-color: black; }
 
 /*# sourceMappingURL=main.css.map */

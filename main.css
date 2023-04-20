@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
+
+body {
+  padding: 20px;
+  background-image: url(images/fondo.jpg);
+  background-size: cover; }
+
+main h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 25px;
+  background-color: rgba(17, 117, 162, 0.53);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: block;
+  margin: 0 auto;
+  width: fit-content; }
+
+#kanban .column {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: calc(20% - 20px);
+  float: left; }
+  #kanban .column h2 {
+    font-weight: 500; }
+  #kanban .column .card {
+    position: relative;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 10px 0; }
+    #kanban .column .card .close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 22px;
+      color: #fff;
+      background-color: red; }
+    #kanban .column .card h3 {
+      font-weight: 500; }
+    #kanban .column .card p {
+      font-weight: 300; }
+    #kanban .column .card .tags {
+      overflow: hidden; }
+      #kanban .column .card .tags .tag {
+        float: left;
+        position: relative;
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        color: #fff; }
+        #kanban .column .card .tags .tag.front {
+          background-color: #16b716; }
+        #kanban .column .card .tags .tag.back {
+          background-color: #de4a4a; }
+        #kanban .column .card .tags .tag.device {
+          background-color: #d8d846; }
+    #kanban .column .card:hover {
+      color: #fff;
+      background-color: #4c9dc2; }
+      #kanban .column .card:hover .tag {
+        color: #1d4050; }
+      #kanban .column .card:hover .close {
+        background-color: black; }
+
+/*# sourceMappingURL=main.css.map */
